@@ -1,4 +1,15 @@
--- Fonction pour charger le script en fonction de l'ID de place du jeu
+--[[
+ ________  _______   ______  ________  ________ 
+|        \|       \ |      \|        \|        \
+| $$$$$$$$| $$$$$$$\ \$$$$$$ \$$$$$$$$| $$$$$$$$
+| $$__    | $$__| $$  | $$     | $$   | $$__    
+| $$  \   | $$    $$  | $$     | $$   | $$  \   
+| $$$$$   | $$$$$$$\  | $$     | $$   | $$$$$   
+| $$      | $$  | $$ _| $$_    | $$   | $$_____ 
+| $$      | $$  | $$|   $$ \   | $$   | $$     \
+ \$$       \$$   \$$ \$$$$$$    \$$    \$$$$$$$$
+
+]]--
 
 function charger_script()
     if game.PlaceId == 5712833750 then
@@ -9,7 +20,5 @@ function charger_script()
         print("ID de place non reconnu")
     end
 end
-
--- Utilisation de la fonction pour charger le script approprié
 
 charger_script()
