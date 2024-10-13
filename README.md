@@ -11,25 +11,15 @@
 ]]--
 
 function charger_script()
-    local scripts = {
-        [5712833750] = "https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator",
-        [13110267312] = "https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md",  -- À vérifier
-        [5569431582] = "https://raw.githubusercontent.com/xpzrmodzz/little-world/refs/heads/main/README.md"  -- À vérifier
-    }
-    
-    local scriptUrl = scripts[game.PlaceId]
-    
-    if scriptUrl then
-        local success, err = pcall(function()
-            loadstring(game:HttpGet(scriptUrl))()
-        end)
-        
-        if not success then
-            warn("Erreur lors du chargement du script : " .. err)
-        end
+    if game.PlaceId == 5712833750 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator"))()
+    elseif game.PlaceId == 13110267312 then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md"))()
+    elseif game.PlaceId == 1234567890 then  -- Remplace cet ID par l'ID de la nouvelle place
+        loadstring(game:HttpGet("https://example.com/nouveau_script.lua"))()  -- Remplace l'URL par celle de ton script
     else
         print("ID de place non reconnu : " .. game.PlaceId)
     end
 end
 
-charger_script()
+charger_script()  -- Appelle la fonction pour charger le script
