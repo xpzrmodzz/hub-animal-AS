@@ -14,6 +14,8 @@ function charger_script()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator"))()
     elseif game.PlaceId == 13110267312 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md"))()
+    elseif game.PlaceId == 5569431582 then  -- Remplace ceci par l'ID du nouveau jeu
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/little-world/refs/heads/main/README.md"))()
     else
         print("ID de place non reconnu : " .. game.PlaceId)
     end
