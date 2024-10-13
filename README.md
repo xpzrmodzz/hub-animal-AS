@@ -11,14 +11,12 @@
 ]]
 
 function charger_script()
-    -- Liste des scripts par PlaceId
     local scripts = {
         [5712833750] = "https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator",
         [13110267312] = "https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md",
-        [5569431582] = "https://raw.githubusercontent.com/xpzrmodzz/little-world/refs/heads/main/README.md"
+        [5569431582] = "https://raw.githubusercontent.com/xpzrmodzz/little-world/main/README.md" -- Assurez-vous que ce chemin est correct
     }
     
-    -- Vérifie si le PlaceId est dans la liste
     if scripts[game.PlaceId] then
         local scriptUrl = scripts[game.PlaceId]
         local success, err = pcall(function()
@@ -34,3 +32,4 @@ function charger_script()
 end
 
 charger_script()
+
