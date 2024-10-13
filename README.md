@@ -1,4 +1,4 @@
---[[
+--[[ 
  ________  _______   ______  ________  ________ 
 |        \|       \ |      \|        \|        \
 | $$$$$$$$| $$$$$$$\ \$$$$$$ \$$$$$$$$| $$$$$$$$
@@ -7,20 +7,19 @@
 | $$$$$   | $$$$$$$\  | $$     | $$   | $$$$$   
 | $$      | $$  | $$ _| $$_    | $$   | $$_____ 
 | $$      | $$  | $$|   $$ \   | $$   | $$     \
- \$$       \$$   \$$ \$$$$$$    \$$    \$$$$$$$$
+ \$$       \$$   \$$ \$$$$$$    \$$    \$$$$$$$$ 
 ]]--
 
 function charger_script()
-    -- Liste des scripts par PlaceId
     local scripts = {
         [5712833750] = "https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator",
-        [13110267312] = "https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md",
-        [5569431582] = "https://raw.githubusercontent.com/xpzrmodzz/little-world/refs/heads/main/README.md"
+        [13110267312] = "https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md",  -- À vérifier
+        [5569431582] = "https://raw.githubusercontent.com/xpzrmodzz/little-world/refs/heads/main/README.md"  -- À vérifier
     }
     
-    -- Vérifie si le PlaceId est dans la liste
-    if scripts[game.PlaceId] then
-        local scriptUrl = scripts[game.PlaceId]
+    local scriptUrl = scripts[game.PlaceId]
+    
+    if scriptUrl then
         local success, err = pcall(function()
             loadstring(game:HttpGet(scriptUrl))()
         end)
