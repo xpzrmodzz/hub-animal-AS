@@ -1,7 +1,6 @@
 local function charger_script()
     local PlaceId = game.PlaceId -- Obtient l'ID de la place actuelle
 
-    -- Définir les scripts selon l'ID de la place
     if PlaceId == 5712833750 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator"))()
     elseif PlaceId == 13110267312 then
@@ -13,4 +12,4 @@ local function charger_script()
     end
 end
 
-charger_script() -- Appelle la fonction pour charger le script
+charger_script()
