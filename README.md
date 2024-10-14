@@ -18,6 +18,8 @@ function charger_script()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/little-world/refs/heads/main/README.md"))()
     elseif game.PlaceId == 16432271978 then  -- Remplace ceci par l'ID du nouveau jeu
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/aninal-adventure/refs/heads/main/README.md"))()
+    elseif game.PlaceId == 3823781113 then  -- Remplace ceci par l'ID du nouveau jeu
+        loadstring(game:HttpGet("https://github.com/xpzrmodzz/saber-simultor/blob/main/README.md"))()
     else
         print("ID de place non reconnu : " .. game.PlaceId)
     end
