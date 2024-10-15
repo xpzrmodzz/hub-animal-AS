@@ -20,6 +20,8 @@ function charger_script()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/aninal-adventure/refs/heads/main/README.md"))()
     elseif game.PlaceId == 3823781113 then  -- Remplace ceci par l'ID du nouveau jeu
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/saber-simultor/refs/heads/main/README.md"))()
+    elseif game.PlaceId == 6273865312 then  -- Remplace ceci par l'ID du nouveau jeu
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/Supernatural-Simulator/refs/heads/main/README.md"))()
     else
         print("ID de place non reconnu : " .. game.PlaceId)
     end
