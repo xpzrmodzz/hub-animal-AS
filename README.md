@@ -11,7 +11,7 @@
 ]]--
 function charger_script()
     if game.PlaceId == 5712833750 then
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/main/animal%20simulator"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/animal-simulator-/refs/heads/main/animal%20simulator"))()
     elseif game.PlaceId == 13110267312 then
         loadstring(game:HttpGet("https://raw.githubusercontent.com/xpzrmodzz/hub-for-UW/main/README.md"))()
     elseif game.PlaceId == 5569431582 then  -- Remplace ceci par l'ID du nouveau jeu
